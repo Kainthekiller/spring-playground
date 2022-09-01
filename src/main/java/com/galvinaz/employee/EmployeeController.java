@@ -11,11 +11,11 @@ import java.util.List;
 public class EmployeeController {
 
 
-    @GetMapping("/")
-    public String hello()
-    {
-        return "<h1>Hello From Spring</h1>";
-    }
+//    @GetMapping("/")
+//    public String hello()
+//    {
+//        return "<h1>Hello From Spring</h1>";
+//    }
 
 public String test()
 {
