@@ -20,11 +20,16 @@ public class piTest {
     @Test
     public void piAsAString() throws Exception
     {
-        RequestBuilder request = MockMvcRequestBuilders.get("/math/pi");
+        RequestBuilder request = MockMvcRequestBuilders.get("/math/gravity");
+        RequestBuilder request2 = MockMvcRequestBuilders.get("/math/Search");
 
         this.mvc.perform(request)
                 .andExpect(status().isOk())
-                .andExpect(content().string("3.141592653589793"));
+                .andExpect(content().string("-9.81"));
+
+        this.mvc.perform(request2)
+                .andExpect(status().isOk());
+               // .andExpect(content().string("This is a task"));
     }
 
 
